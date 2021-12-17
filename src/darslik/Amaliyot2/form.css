@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.form-group {
+  display: block;
+  width: 50%;
+  margin: 30px auto;
+  padding: 10px 0;
+  background-color: aqua;
+}
+
+input {
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+}

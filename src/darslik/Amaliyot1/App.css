@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bbs {
+  margin: 13px 0;
+}
+.aftorName {
+  background-color: red;
+}
+.jobName {
+  background-color: blue;
+}

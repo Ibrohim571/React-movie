@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.headerWrapper {
+  padding: 0 13px;
+}
+
+.menuChas {
+  width: 100%;
+  min-height: calc(100vh - 64px - 70px);
+}
+
+.movies {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.searchInput {
+  width: 100%;
+}
+
+.searchFather {
+  display: block;
+}
+.searchParag {
+  display: inline-block;
+}
+.searchParag:not(:last-child) {
+  margin-right: 20px;
+}
