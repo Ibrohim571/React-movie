@@ -8,6 +8,9 @@ class ComponentUse extends Component {
       isCouting: false
     }
   }
+
+  showFu
+
   handleStart = () => {
     this.setState({isCouting: true})
     this.counterId = setInterval(() => {

@@ -1,22 +1,16 @@
+import { useEffect, useState } from 'react';
+import Data from './data/Data';
+import BozorClon from './Bozor dasturi/BozorClon';
+import RouterClon from './darslik/Router/RouterClon'
+function App() {
 
-import {Component} from 'react'
-import Footer from './Movie app/Landing/Footer';
-import Menu from './Movie app/Landing/Menu';
-import Header from './Movie app/Landing/Header';
-import "./Movie app/style/Asosiy.css"
-class App extends Component {
-  constructor(props) {
-    super(props)
-  }
-  
-  render() {
-    return (
-      <div>
-        <Header />
-        <Menu />
-        <Footer />
-      </div>
-    )
-  }
+
+  return (
+    <div>
+      {/* <RouterClon /> */}
+      {/* <BozorClon /> */}
+      <Data />
+    </div>
+  )
 }
 export default App;

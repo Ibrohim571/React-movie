@@ -1,0 +1,57 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 2,
+      "title": "google-server",
+      "author": "typicode"
+    },
+    {
+      "id": 3,
+      "title": "you-tube-server",
+      "author": "typicode"
+    },
+    {
+      "id": 4,
+      "title": "facebook-server",
+      "author": "typicode"
+    },
+    {
+      "title": "iuyiu",
+      "id": 499
+    },
+    {
+      "title": "uhihihowef",
+      "id": 811
+    },
+    {
+      "id": 657,
+      "title": "rwerewr",
+      "author": "Ibrohim"
+    },
+    {
+      "id": 1005,
+      "title": "rwerewr",
+      "author": "Ibrohim"
+    },
+    {
+      "id": 529,
+      "title": "download",
+      "author": "Ibrohim"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

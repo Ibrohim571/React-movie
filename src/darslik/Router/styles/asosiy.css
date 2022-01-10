@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(210, 207, 207);
+}
+
+.navbarWrapper {
+  padding: 0 2rem;
+}
+
+.menu {
+  width: 100%;
+  min-height: calc(100vh - 64px - 70px);
+  padding: 10px 20px;
+  background-color: rgb(189, 188, 188);
+}
+
+.loader {
+  position: fixed;
+  display: flex;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.List {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  transition: 0.2s ease-in;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card-content,
+.card-image,
+.card-action {
+  position: relative;
+  z-index: 10;
+}
+
+.card-content {
+  flex-grow: 1;
+  color: rgb(245, 189, 19);
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+.card-action {
+  background-image: #4e7671 !important;
+  background-image: linear-gradient(to right, #4e7671, #896852);
+}
+
+.card-image {
+  padding: 6px;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(45deg, rgb(4, 11, 223), rgb(193, 46, 6));
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    45deg,
+    rgb(107, 232, 29),
+    rgb(240, 39, 109)
+  );
+  filter: blur(30px);
+}
+
+.card .span {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+}
+
+.card .span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  pointer-events: none;
+}
+
+/* retsep id styllari */
+img {
+  max-width: 100%;
+  margin-top: 1rem;
+}

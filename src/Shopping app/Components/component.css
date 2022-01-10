@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.headerNav {
+  background-color: rgb(50, 135, 14);
+  width: 100% !important;
+  padding: 0 3%;
+}
+
+.menu {
+  width: 100%;
+  min-height: calc(100vh - 64px - 70px);
+  padding: 10px 20px;
+  background-color: rgb(189, 188, 188);
+}
+
+.progress {
+  margin: 0;
+}
+
+.goods {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-content {
+  flex-grow: 1;
+}
+
+.cart {
+  position: fixed;
+  bottom: 5rem;
+  right: 2rem;
+  cursor: pointer;
+  z-index: 5;
+  padding: 1rem;
+  background-color: rgb(51, 9, 203);
+  color: #ffffff;
+}
+
+@media (min-width: 780px) {
+  .cart {
+    top: 5rem;
+    bottom: unset;
+  }
+}
+
+.fatherBasket {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(57, 56, 56, 0.5);
+  overflow-y: hidden;
+}
+
+.basket-list {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50rem;
+  background-color: #fff;
+  max-width: 95%;
+  box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.5);
+  animation: BasketList 0.2s linear;
+}
+
+.basket-close {
+  cursor: pointer;
+  position: absolute;
+  padding: 4px;
+  top: 0.07rem;
+  right: 0.06rem;
+  color: #fff;
+  background-color: rgb(240, 54, 54);
+}
+
+@keyframes BasketList {
+  from {
+    top: 70%;
+    opacity: 0.5;
+  }
+  to {
+    top: 50%;
+    opacity: 1;
+  }
+}
+
+.basket-delete {
+  cursor: pointer;
+}
+
+.Toastify__toast {
+  background-color: #000;
+  color: rgb(237, 199, 7);
+  border-radius: 20px 0 20px 0;
+}
+
+.Toastify__close-button {
+  background-color: rgb(244, 5, 5);
+  color: #fff;
+  padding: 2px 4px;
+}
+
+.shopFooter {
+  background-color: rgb(50, 135, 14);
+  width: 100% !important;
+}

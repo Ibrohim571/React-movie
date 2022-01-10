@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.important {
+  color: rgb(239, 156, 14);
+  font-style: italic;
+}
